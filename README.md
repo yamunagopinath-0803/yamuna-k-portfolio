@@ -26,8 +26,7 @@ This is my personal portfolio website created using HTML, CSS, and JavaScript.
 
 ## Contact
 
-Email: yamunakumaresan2005@gmail.com
-GitHub: https://github.com/yamunagopinath-0803
+
 
 Email: [yamunakumaresan2005@gmail.com](mailto:yamunakumaresan2005@gmail.com)
 GitHub: https://github.com/yamunagopinath-0803
