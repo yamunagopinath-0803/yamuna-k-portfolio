@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yamuna K - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .profile-picture {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            border: 3px solid white;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00adb5;
+        }
+
+        .section-content {
+            background: white;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .download-button {
+            background-color: #00adb5;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        .download-button:hover {
+            background-color: #007b80;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="image.jpg" class="profile-picture">
+        <h1>Yamuna K</h1>
+        <p>Fresher</p>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <div class="section-content">
+        <h2>About Me</h2>
+        <p>
+            Enthusiastic Mathematics graduate with training in Python Full Stack Development.
+            Skilled in building web applications using HTML, CSS, JavaScript, and Django.
+            Passionate about problem-solving and eager to start my career as a Software Developer.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <div class="section-content">
+        <h2>Education</h2>
+        <p><b>B.Sc Mathematics (2022 - 2025)</b></p>
+        <p>M.V. Muthiah Government Arts & Science College</p>
+        <p>CGPA: 7.6</p>
+
+        <p><b>HSC</b></p>
+        <p>Government Model Higher Secondary School ,Kasipalayam (2021-2022)</p>
+        <p>percentage: 85.3%</p>
+
+
+        <p><b>SSLC</b></p>
+        <p>Government High School ,Viruthalaipatti(2019-2020)</p>
+        <p>percentage: 91%</p>
+
+    </div>
+
+
+</section>
+
+<section id="skills">
+    <div class="section-content">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Django (Basic)</li>
+            <li>SQL</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="section-content">
+        <h2>Projects</h2>
+        <h3>E-Commerce Website</h3>
+    <ul>
+        <li>Responsive design</li>
+        <li>Add to cart using Local Storage</li>
+        <li>Login & Order Summary</li>
+    </ul>
+
+    <h3>Mini Calculator</h3>
+    <ul>
+        <li>Arithmetic operations</li>
+        <li>Input validation</li>
+        <li>History feature</li>
+    </ul>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="section-content">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:yamunakumaresan2005@gmail.com">yamunakumaresan2005@gmail.com</a></p>
+    <p>Phone: <a href="tel:+918838595066">+91 8838595066</a></p>
+    <p>GitHub: <a href="https://github.com/yamunagopinath-0803" target="_blank">View Profile</a></p>
+    </div>
+</section>
+
+<section id="resume">
+    <div class="section-content" style="text-align:center;">
+        <a href="resume.pdf" target="_blank" class="download-button">Download Resume</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Yamuna K</p>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.getElementById(this.getAttribute('href').substring(1));
+        window.scrollTo({
+            top: target.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+</body>
+</html>
